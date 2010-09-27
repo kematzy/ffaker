@@ -70,6 +70,14 @@ module Faker
     def neighborhood
       NEIGHBORHOOD.rand
     end
+    
+    def country
+      COUNTRY.rand
+    end
+    
+    def country_code
+      COUNTRY_CODE.rand
+    end
 
     ZIP_FORMATS = k ['#####', '#####-####']
 
@@ -150,5 +158,50 @@ module Faker
       'Cipriani', 'Brentwood Central', 'Jupiter South/Abacoa', 'Sea Ranch Lakes', 'Schall Circle/Lakeside Green',
       'Olmsted Falls Central', 'South of Lake Shore Blvd', 'Gates Mills North', 'White Oak South of Columbia Pike',
       'Rockville East of Hungerford Dr', 'Cleveland Park']
+      
+      
+    COUNTRY = k ['Ascension Island','Andorra','United Arab Emirates','Afghanistan','Antigua and Barbuda',
+      'Anguilla','Albania','Armenia','Netherlands Antilles','Angola','Argentina','American Samoa',
+      'Austria','Australia','Aruba','Azerbaijan','Bosnia and Herzegovina','Barbados','Bangladesh','Belgium',
+      'Burkina Faso','Bulgaria','Bahrain','Burundi','Benin','Bermuda','Brunei Darussalam','Bolivia','Brazil',
+      'Bahamas','Bhutan','Bouvet Island','Botswana','Belarus','Belize','Canada','Congo, Democratic Republic',
+      'Central African Republic','Congo','Switzerland','Cote D\'Ivoire (Ivory Coast)','Cook Islands','Chile',
+      'Cameroon','China','Colombia','Costa Rica','Cuba','Cape Verde','Christmas Island','Cyprus','Czech Republic',
+      'Germany','Djibouti','Denmark','Dominica','Dominican Republic','Algeria','Ecuador','Estonia','Egypt','Eritrea',
+      'Spain','Ethiopia','Finland','Fiji','Falkland Islands','Micronesia','Faroe Islands','France','Gabon',
+      'Great Britain (UK)','Grenada','Georgia','French Guiana','Ghana','Gibraltar','Greenland','Gambia','Guinea',
+      'Guadeloupe','Equatorial Guinea','Greece','South Georgia and the South Sandwich Islands','Guatemala','Guam',
+      'Guinea-Bissau','Guyana','Hong Kong','Honduras','Croatia','Haiti','Hungary','Indonesia','Ireland','Israel',
+      'Isle of Man','India','British Indian Ocean Territory','Iraq','Iran','Iceland','Italy','Jersey','Jamaica',
+      'Jordan','Japan','Kenya','Kyrgyzstan','Cambodia','Kiribati','Comoros','Saint Kitts and Nevis','Korea (North)',
+      'Korea (South)','Kuwait','Cayman Islands','Kazakhstan','Laos','Lebanon','Saint Lucia','Liechtenstein',
+      'Sri Lanka','Liberia','Lesotho','Lithuania','Luxembourg','Latvia','Libya','Morocco','Monaco','Moldova',
+      'Montenegro','Madagascar','Marshall Islands','Macedonia','Mali','Myanmar','Mongolia','Macau',
+      'Northern Mariana Islands','Martinique','Mauritania','Montserrat','Malta','Mauritius','Maldives','Malawi',
+      'Mexico','Malaysia','Mozambique','Namibia','New Caledonia','Niger','Norfolk Island','Nigeria','Nicaragua',
+      'Netherlands','Norway','Nepal','Nauru','Niue','New Zealand','Oman','Panama','Peru','French Polynesia',
+      'Papua New Guinea','Philippines','Pakistan','Poland','St. Pierre and Miquelon','Pitcairn','Puerto Rico',
+      'Palestinian Territory, Occupied','Portugal','Palau','Paraguay','Qatar','Réunion','Romania','Serbia',
+      'Russian Federation','Rwanda','Saudi Arabia','Solomon Islands','Seychelles','Sudan','Sweden','Singapore',
+      'St. Helena','Slovenia','Slovakia, Republic of','Sierra Leone','San Marino','Senegal','Somalia','Suriname',
+      'São Tomé and Príncipe','El Salvador','Syria','Swaziland','Turks and Caicos Islands','Chad','Togo','Thailand',
+      'Tajikistan','Tokelau','Turkmenistan','Tunisia','Tonga','East Timor','Turkey','Trinidad and Tobago','Tuvalu',
+      'Taiwan','Tanzania','Ukraine','Uganda','United Kingdom','US Minor Outlying Islands','Uruguay','Uzbekistan',
+      'Vatican City State (Holy See)','Saint Vincent and the Grenadines','Venezuela','British Virgin Islands',
+      'Virgin Islands (U.S.)','Vietnam','Vanuatu','Wallis and Futuna Islands','Samoa','Yemen','Mayotte',
+      'South Africa','Zambia','Zimbabwe']
+      
+    COUNTRY_CODE = k ['AC','AD','AE','AF','AG','AI','AL','AM','AN','AO','AR','AS','AT','AU','AW','AZ','BA','BB','BD',
+      'BE','BF','BG','BH','BI','BJ','BM','BN','BO','BR','BS','BT','BV','BW','BY','BZ','CA','CD','CF','CG','CH','CI',
+      'CK','CL','CM','CN','CO','CR','CU','CV','CX','CY','CZ','DE','DJ','DK','DM','DO','DZ','EC','EE','EG','ER','ES',
+      'ET','FI','FJ','FK','FM','FO','FR','GA','GB','GD','GE','GF','GH','GI','GL','GM','GN','GP','GQ','GR','GS','GT',
+      'GU','GW','GY','HK','HN','HR','HT','HU','ID','IE','IL','IM','IN','IO','IQ','IR','IS','IT','JE','JM','JO','JP',
+      'KE','KG','KH','KI','KM','KN','KP','KR','KW','KY','KZ','LA','LB','LC','LI','LK','LR','LS','LT','LU','LV','LY',
+      'MA','MC','MD','ME','MG','MH','MK','ML','MM','MN','MO','MP','MQ','MR','MS','MT','MU','MV','MW','MX','MY','MZ',
+      'NA','NC','NE','NF','NG','NI','NL','NO','NP','NR','NU','NZ','OM','PA','PE','PF','PG','PH','PK','PL','PM','PN',
+      'PR','PS','PT','PW','PY','QA','RE','RO','RS','RU','RW','SA','SB','SC','SD','SE','SG','SH','SI','SK','SL','SM',
+      'SN','SO','SR','ST','SV','SY','SZ','TC','TD','TG','TH','TJ','TK','TM','TN','TO','TP','TR','TT','TV','TW','TZ',
+      'UA','UG','UK','US','UY','UZ','VA','VC','VE','VG','VI','VN','VU','WF','WS','YE','YT','ZA','ZM','ZW']
+    
   end
 end
